@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="Survey form.css">
+	<title>Survey form</title>
+</head>
+
+<body id="main">
+	<!-- Header and title -->
+	<header id="header">
+		<div id="header-img"></div>
+		<div id="header-info">
+			<h1 id="title">Torin Gym</h1>
+			<p id="description">
+				<i>Register to be part of the elite.
+				<br>
+				Changing bodies, changing lives.
+				<br>
+				EST. 1998</i>
+			</p>
+		</div>
+	</header>
+
+	<!-- Form -->
+	<form id="survey-form">
+
+		<!-- Name -->
+		<div class="form-div">
+			<label id="name-label" for="name">
+				<strong>Name:</strong>
+			</label>
+			<input id="name" class="form-text" type="text" placeholder="Your name" required/>
+		</div>
+
+		<!-- Email -->
+		<div class="form-div">
+			<label id="email-label" for="email">
+				<strong>Email:</strong>
+			</label>
+			<input id="email" class="form-text" type="email" placeholder="Your Email" required/>
+		</div>
+		<!-- Date of birth -->
+		<div class="form-div">
+			<label id="Date-label" for="Date">
+				<strong>Date of birth:</strong>
+			</label>
+			<input id="Date" class="form-text" type="Date" required/>
+		</div>
+
+		<!-- Phone number -->
+		<div class="form-div">
+			<label id="number-label" for="number">
+				<strong>Phone number:</strong>&nbsp;(optional)
+			</label>
+			<input id="number" class="form-text" type="number" min="0711111111" max="0799999999" placeholder="Your phone number">
+		</div>
+
+		<!-- City -->
+		<div class="form-div">
+			<label id="City-label" for="city">
+				<strong>Wich branch would you like to register to?</strong>
+			</label>
+			<select id="dropdown" class="form-text" name="city" required>
+				<option disabled selected value>Select your city</option>
+				<option value="Tangier">Tangier</option>
+				<option value="Tetouan">Tetouan</option>
+				<option value="Rabat">Rabat</option>
+				<option value="Casablanca">Casablanca</option>
+				<option value="Fez">Fez</option>
+				<option value="Marrakesh">Marrakesh</option>
+				<option value="Agadir">Agadir</option>
+			</select>
+		</div>
+
+		<!-- Subscription plans -->
+		<div class="form-div">
+			<p><strong>Plans and Pricing:</strong></p>
+			<label>
+				<input type="radio" class="form-radio" name="plan" value="600dh">1 Month:&nbsp;<i>600dh</i>
+			</label>
+			<label>
+				<input type="radio" class="form-radio" name="plan" value="1600dh">3 Months:&nbsp;<i>1650dh</i>
+			</label>
+			<label>
+				<input type="radio" class="form-radio" name="plan" value="3000dh">6 Months:&nbsp;<i>3000dh</i>
+			</label>
+			<label>
+				<input type="radio" class="form-radio" name="plan" value="5500dh">1 Year:&nbsp;<i>5500dh</i>
+			</label>
+		</div>
+
+		<!-- Type of workouts -->
+		<div class="form-div">
+			<p><strong>What is your type of workout?</strong></p>
+			<label>
+				<input type="checkbox" class="form-checkbox" name="type" value="Weight-lifting">Weightlifting
+			</label>
+			<label>
+				<input type="checkbox" class="form-checkbox" name="type" value="Calisthenics">Calisthenics
+			</label>
+			<label>
+				<input type="checkbox" class="form-checkbox" name="type" value="Crossfit">Crossfit
+			</label>
+			<label>
+				<input type="checkbox" class="form-checkbox" name="type" value="Swimming">Swimming
+			</label>
+			<label>
+				<input type="checkbox" class="form-checkbox" name="type" value="Boxing">Boxing
+			</label>
+		</div>
+
+		<!-- Textbox -->
+		<div class="form-div">
+			<p><strong>Tell us about your past experiences if you have any:</strong></p>
+			<textarea id="comment" name="comment" placeholder="Your experiences..."></textarea>
+		</div class="form-div">
+
+		<!-- Submit button -->
+		<div class="form-div">
+      		<button type="submit" id="submit" class="submit-button">Submit</button>
+    	</div>
+
+	</form>
+
+</body>
+
+</html>
